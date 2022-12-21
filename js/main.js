@@ -1,10 +1,10 @@
-let a=parseInt(prompt("enter the number"))
-let b;
-let c=0;
-for(i=1;a!==0;i++){
+let a=parseInt(prompt("enter the number"));
+let length=a.toString().length
+for(i=1;i<=length;i++){
     b=a%10;
-    a=(a-b)/10;
-    c=c*10+b;
-    document.write(b+"<br>")
+    a=a/10
+    document.write(Math.floor(b)+"<br>")
 }
+
+
 
